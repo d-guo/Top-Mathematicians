@@ -34,7 +34,7 @@ def file_is_valid(resp) :	#checks file to make sure it is html type
 	return False
 
 def log_error(error) : #logs error wip
-	#print(error)
+	print(error)
 
 def list_of_names(raw_content) :	#returns list of name of mathematicians without duplicates
 	names = set()

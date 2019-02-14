@@ -1,6 +1,9 @@
 # Top-Mathematicians
-Using Web Scraping to find the most searched mathematicians in Wikipedia's XTools using Requests and BeautifulSoup
+Web Scraping to find the current most popular mathematicians using Requests and BeautifulSoup.
 
-top 100 mathematicians found in http://www.fabpedigree.com/james/mathmen.htm
+Top 100 mathematicians found at http://www.fabpedigree.com/james/mathmen.htm and then found the mathematicians on Wikipedia's XTools page to calculate a popularity score for each mathematician based on number of page views in the past six months.
 
-calculated each mathematician's popularity score based on views in past six months on Wikipedia's XTools page
+To use, open terminal and run mathematicians.py by typing python mathematicians.py
+
+Must have Python installed.
+Must have modules Requests and BeautifulSoup installed.

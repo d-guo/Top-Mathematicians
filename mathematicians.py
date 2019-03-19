@@ -53,14 +53,15 @@ def get_pop_num(name) : #returns the popularity score of a given mathematician (
 	if raw_html == None :
 		return -1
 	html = BeautifulSoup(raw_html, 'html.parser')
+	
 	for a in html.select('a') :	#popularity score determined by number of searches in last six months
 		if a['href'].find('latest-60') > -1 :
 			a = a.text.replace(',', '')
 			try :
 				return int(a)
 			except :
-				return -1
-	return -1
+				return -2
+	return -3
 
 names = list_of_names(get_content("http://www.fabpedigree.com/james/mathmen.htm"))
 
